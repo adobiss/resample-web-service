@@ -36,11 +36,11 @@ Concurrency - currently implemented by declaring path operation functions with '
 
 1. cd project root folder
 2. type 'uvicorn main:app' in command line to launch server manually (add '--reload' if required to make changes to main.py)
-3. run Main.py:
-	3. 	
-	3. run 'test_main.py --source-file YOUR_FILE_PATH' from shell. '--source-file YOUR_FILE_PATH' is optional. If missing, Python will use the file path specified in main.py
-3b. add local file path to test_main.py
-4b. run test_main.py
+3. run 'test_main.py --source-file YOUR_FILE_PATH' from shell. '--source-file YOUR_FILE_PATH' is optional. If missing, Python will use the file path specified in main.py
+
+Alternatively:
+	3. add local file path to test_main.py
+	4. run test_main.py
 
 
 ### Current functionality

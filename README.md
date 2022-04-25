@@ -50,4 +50,4 @@ Proper test scripts, HTTP exception handling.
 
 ### Future Improvements:
 
-Concurrency using 'async def' path operation functions. Deploy properly using Docker, accept multiple files from single client, run uvicorn server from Python file, workflow improvements.
+Concurrency using 'async def' path operation functions. Deploy properly using Docker, accept multiple files from single client, run uvicorn server from Python file, API versioning, workflow improvements.

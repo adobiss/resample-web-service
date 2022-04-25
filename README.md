@@ -37,7 +37,7 @@ Concurrency - currently implemented by declaring path operation functions with '
 2. cd project root folder
 3. activate the environment
 4. type 'uvicorn main:app' in command line to launch server manually (add '--reload' if required to make changes to main.py)
-5. repeath steps 1, 2 & 3
+5. repeat steps 1, 2 & 3
 6. run 'test_main.py --source-file YOUR_FILE_PATH' from prompt. '--source-file YOUR_FILE_PATH' is optional. If missing, Python will use the file path specified by you in main.py
 
 ### Current Functionality:

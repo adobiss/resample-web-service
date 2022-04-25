@@ -5,7 +5,7 @@ Converts wave/ mp3 files to 32kHz mp3
 ### New in This Version:
 
 - Simultaneous client requests are now supported
-- Service will not convert files that are already in the required format
+- Service will not resample files that are already in the required format
 - Resampled files stored on server are deleted as a background task after client download
 - Minor workflow improvements
 

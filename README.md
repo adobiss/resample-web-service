@@ -2,7 +2,7 @@ Converts wave/ mp3 files to 32kHz mp3
 
 # README #
 
-### New in this version:
+### New in This Version:
 
 - Simultaneous client requests are now supported
 - Service will not convert files that are already in the required format
@@ -11,7 +11,7 @@ Converts wave/ mp3 files to 32kHz mp3
 
 Concurrency - currently implemented by declaring path operation functions with 'def'. In such case FastAPI runs each function in an external threadpool that is then awaited, instead of being called directly ([see FastAPI documentation](https://fastapi.tiangolo.com/async/#very-technical-details)). Functionality tested by submitting two POST requests (file upload) with 5 second sleep timer activated to 'http://127.0.0.1:8000/resample/' via Postman and referencing server's 'print' messages.
 
-### General info:
+### General Info:
 
 **Python version: 3.8.1**
 
@@ -40,14 +40,14 @@ Concurrency - currently implemented by declaring path operation functions with '
 5. repeath steps 1, 2 & 3
 6. run 'test_main.py --source-file YOUR_FILE_PATH' from prompt. '--source-file YOUR_FILE_PATH' is optional. If missing, Python will use the file path specified by you in main.py
 
-### Current functionality:
+### Current Functionality:
 
 The Web Service is built with DevOps framework in mind. As majority of the time was spent researching API frameworks, concurrency and parallelism as well as studying FastAPI documentation the goal was to build a basic Web Service that possesses full range of functionality and improve incrementally.
 
-### Missing functionality:
+### Missing Functionality:
 
 Proper test scripts, HTTP exception handling.
 
-### Future improvements:
+### Future Improvements:
 
 Concurrency using 'async def' path operation functions. Deploy properly using Docker, accept multiple files from single client, run uvicorn server from Python file, workflow improvements.

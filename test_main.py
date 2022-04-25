@@ -7,7 +7,7 @@ url = 'http://127.0.0.1:8000/resample/' # endpoint for both resampling and clien
 audio_to_resample_path_internal = r"C:\Users\AD\Desktop\You Tell Me.wav" # add local file path here if not using command-line arguments (tested for .wav and .mp3)
 
 parser = argparse.ArgumentParser(description='Resample audio')
-parser.add_argument('--source-file', dest='audio_to_resample_path',
+parser.add_argument('--local-file', dest='audio_to_resample_path',
                     help='The path to the audio file (.wav or .mp3) that needs to be resampled to 32kHz mp3. '
                              'If none, the file path provided in the Python file will be used.')
 args = parser.parse_args()

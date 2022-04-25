@@ -4,7 +4,7 @@ import argparse
 
 # Utils
 url = 'http://127.0.0.1:8000/resample/' # endpoint for both resampling and client download
-audio_to_resample_path_internal = r"C:\Users\AD\Desktop\You Tell Me.wav" # add local file path here if not using command-line arguments (tested for .wav and .mp3)
+audio_to_resample_path_internal = r"C:\Test.wav" # add local file path here if not using command-line arguments (tested for .wav and .mp3)
 
 parser = argparse.ArgumentParser(description='Resample audio')
 parser.add_argument('--local-file', dest='audio_to_resample_path',

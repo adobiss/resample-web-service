@@ -25,10 +25,10 @@ Concurrency - currently implemented by declaring path operation functions with '
 1. extract project folder archive
 2. cd project root folder
 2. install virtual environment (below virtual environment instructions are untested and provided for reference):
-	- 'pip install virtualenv'
-	- 'virtualenv env'
+	- pip install virtualenv
+	- virtualenv env
 3. activate virtual environment (below virtual environment instruction are untested and provided for reference):
-	- '.\env\Scripts\activate'
+	- .\env\Scripts\activate
 4. pip install -r .\requirements.txta
 
 

@@ -2,7 +2,7 @@ Converts wave/ mp3 files to 32kHz mp3
 
 # README #
 
-### New in this version
+### New in this version:
 
 - Simultaneous client requests are now supported
 - Service will not convert files that are already in the required format
@@ -11,7 +11,7 @@ Converts wave/ mp3 files to 32kHz mp3
 
 Concurrency - currently implemented by declaring path operation functions with 'def'. In such case FastAPI runs each function in an external threadpool that is then awaited, instead of being called directly ([see FastAPI documentation](https://fastapi.tiangolo.com/async/#very-technical-details)). Functionality tested by submitting two POST requests (file upload) with 5 second sleep timer activated to 'http://127.0.0.1:8000/resample/' via Postman and referencing server's 'print' messages.
 
-### General info
+### General info:
 
 **Python version: 3.8.1**
 
@@ -20,7 +20,7 @@ Concurrency - currently implemented by declaring path operation functions with '
  - test_main.py: Run POST and GET methods consecutively under a single function to upload local file for resampling and execute client download (to the same dir as test_main.py). Local file path is required.
 
 
-### Setup Environment & Install Dependencies
+### Setup Environment & Install Dependencies:
 
 1. extract project folder archive
 2. cd project root folder
@@ -32,25 +32,22 @@ Concurrency - currently implemented by declaring path operation functions with '
 4. pip install -r .\requirements.txta
 
 
-### Run Test Script
+### Run Test Script:
+1. open relevant prompt
+2. cd project root folder
+3. activate the environment
+4. type 'uvicorn main:app' in command line to launch server manually (add '--reload' if required to make changes to main.py)
+5. repeath steps 1, 2 & 3
+6. run 'test_main.py --source-file YOUR_FILE_PATH' from prompt. '--source-file YOUR_FILE_PATH' is optional. If missing, Python will use the file path specified by you in main.py
 
-1. cd project root folder
-2. type 'uvicorn main:app' in command line to launch server manually (add '--reload' if required to make changes to main.py)
-3. run 'test_main.py --source-file YOUR_FILE_PATH' from shell. '--source-file YOUR_FILE_PATH' is optional. If missing, Python will use the file path specified in main.py
-
-Alternatively:
-	3. add local file path to test_main.py
-	4. run test_main.py
-
-
-### Current functionality
+### Current functionality:
 
 The Web Service is built with DevOps framework in mind. As majority of the time was spent researching API frameworks, concurrency and parallelism as well as studying FastAPI documentation the goal was to build a basic Web Service that possesses full range of functionality and improve incrementally.
 
-### Missing functionality
+### Missing functionality:
 
 Proper test scripts, HTTP exception handling.
 
-### Future improvements
+### Future improvements:
 
 Concurrency using 'async def' path operation functions. Deploy properly using Docker, accept multiple files from single client, run uvicorn server from Python file, workflow improvements.

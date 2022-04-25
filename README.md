@@ -9,7 +9,7 @@ Converts wave/ mp3 files to 32kHz mp3
 - Resampled files stored on server are deleted as a background task after client download
 - Minor workflow improvements
 
-Concurrency - currently implemented by declaring path operation functions with 'def'. In such case FastAPI runs each function in an external threadpool that is then awaited, instead of being called directly ([see FastAPI documentation] (https://fastapi.tiangolo.com/async/#very-technical-details). Functionality tested by submitting two POST requests (file upload) with 5 second sleep timer activated to 'http://127.0.0.1:8000/resample/' via Postman and referencing server's 'print' messages.
+Concurrency - currently implemented by declaring path operation functions with 'def'. In such case FastAPI runs each function in an external threadpool that is then awaited, instead of being called directly ([see FastAPI documentation](https://fastapi.tiangolo.com/async/#very-technical-details). Functionality tested by submitting two POST requests (file upload) with 5 second sleep timer activated to 'http://127.0.0.1:8000/resample/' via Postman and referencing server's 'print' messages.
 
 ### General info
 

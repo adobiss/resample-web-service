@@ -29,7 +29,7 @@ Concurrency - currently implemented by declaring path operation functions with '
 	- virtualenv env
 3. activate virtual environment (below virtual environment instruction are untested and provided for reference):
 	- .\env\Scripts\activate
-4. pip install -r .\requirements.txta
+4. pip install -r .\requirements.txt
 
 
 ### Run Test Script:

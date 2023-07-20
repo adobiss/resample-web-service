@@ -35,7 +35,7 @@ def file_upload(inFile: UploadFile):
             
            # Extract original audio sample rate and format
            original_audio_info = mediainfo(tmp_path)
-           original_audio_sample_rate = int(int(original_audio_info['sample_rate']) / 1000)
+           original_audio_sample_rate = float(original_audio_info['sample_rate']) / 1000
            original_audio_format = original_audio_info['format_name']
            
            # Check if audio already in required format
@@ -55,7 +55,7 @@ def file_upload(inFile: UploadFile):
             
                # Extract resampled audio sample rate and format
                resampled_audio_info = mediainfo(output_file_path)
-               resampled_audio_sample_rate = int(int(resampled_audio_info['sample_rate']) / 1000)
+               resampled_audio_sample_rate = float(resampled_audio_info['sample_rate']) / 1000
                resampled_audio_format = resampled_audio_info['format_name']           
          
                return {'original_file': original_file, 'resampled_server_file_path': output_file_path,
